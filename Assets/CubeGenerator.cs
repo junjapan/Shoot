@@ -20,7 +20,13 @@ public class CubeGenerator : MonoBehaviour
 		{
 			GameObject obj = Instantiate(
 				prefab,
-				new Vector3(Random.Range(-5.0f, 11.0f), Random.Range(10.0f, 12.0f), Random.Range(-1.0f, 3.0f)),
+				new Vector3(
+					//以下は端を含む。floatのため。intの場合はendは含まない。
+					Random.Range(-5.0f, 11.0f), 
+					Random.Range(10.0f, 12.0f), 
+					Random.Range(-1.0f, 3.0f)
+					),
+				//identityは初期値
 				Quaternion.identity
 
 			);

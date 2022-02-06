@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     {
         //GUI.matrix = Matrix4x4.Scale(Vector3.one * 3);
         GUI.Label(new Rect(5, 5, 10, 10), score.ToString(),scoreStyle);
+        //画面の真ん中に持っていく
         GUI.Label(new Rect(Screen.width/2-150, Screen.height/2-25, 300, 50), msg, msgStyle);
     }
 

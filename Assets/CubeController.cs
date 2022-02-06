@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CubeController : MonoBehaviour
 {
+    //自プログラムはプレハブに付いていて、cubuGeneratorにて任意のタイミングで生成される。
+    //つまりHierarchy画面にいないので以下はプライベートフィールドになる。
+    //findで見つけて操作することも出来るがその場合はコストが大きい。
     private GameManager gm;
 
     private void OnCollisionEnter(Collision coll)
